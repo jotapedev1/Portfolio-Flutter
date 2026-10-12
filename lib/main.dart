@@ -138,16 +138,7 @@ class PortfolioPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 4, 21, 117),
         foregroundColor: Colors.white,
-        title: Row(
-          children: [
-            Image.asset('assets/jornal.png', height: 32), // logo
-            const SizedBox(width: 8),
-            // Flexible corta o nome com "..." se faltar espaço no celular
-            const Flexible(
-              child: Text('João Pedro', overflow: TextOverflow.ellipsis),
-            ),
-          ],
-        ),
+        title: const Text('Portfólio - João Pedro'),
         actions: [
           TextButton(
             onPressed: () => _abrir('https://github.com/jotapedev1/'),
